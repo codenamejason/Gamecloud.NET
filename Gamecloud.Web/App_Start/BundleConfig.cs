@@ -27,6 +27,9 @@ namespace Gamecloud.Web
           "~/Scripts/app/app.datamodel.js",
           "~/Scripts/app/app.viewmodel.js",
           "~/Scripts/app/home.viewmodel.js",
+          "~/Scripts/app/stream.viewmodel.js",
+          "~/Scripts/app/dashboard.viewmodel.js",
+          "~/Scripts/app/clips.js",
           "~/Scripts/app/_run.js"));
 
       // Use the development version of Modernizr to develop with and learn from. Then, when you're
