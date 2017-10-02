@@ -4,10 +4,12 @@
     self.myHometown = ko.observable("");
 
     self.ob = {
-        Hometown = ko.observable()
+        Hometown: ko.observable()
 
 
     };
+
+    
 
     Sammy(function () {
         this.get('#home', function () {
@@ -20,14 +22,18 @@
                     'Authorization': 'Bearer ' + app.dataModel.getAccessToken()
                 },
                 success: function (data) {
-                    self.ob.Hometown('Your Hometown is : ' + data.hometown);
+                   self.ob.Hometown('Your Hometown is : ' + data.hometown);
                 }
             });
         });
         this.get('/', function () { this.app.runRoute('get', '#home'); });
     });
 
+
+    //self.init();
     return self;
+   
+
 }
 
 app.addViewModel({

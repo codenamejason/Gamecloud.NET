@@ -5,10 +5,8 @@ using System.Web;
 
 namespace Gamecloud.Web.Models
 {
-  public class DashboardViewModel
+  public class Streambot
   {
-    public string UserName { get; set; }
-
 
   }
 }

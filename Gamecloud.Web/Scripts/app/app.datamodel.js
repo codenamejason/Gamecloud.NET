@@ -1,14 +1,24 @@
 ﻿function AppDataModel() {
     var self = this;
+
     // Routes
     self.userInfoUrl = "/api/Me";
     self.siteUrl = "/";
+    // Load the User Dashboard
+    self.loadDashboardUrl = "/api/DashboardApiController";
+    self.loadStreambotViewModel = "/api/LoadStreambotViewModel";
 
     // Route operations
 
+
+
     // Other private operations
 
+
+
     // Operations
+
+
 
     // Data
     self.returnUrl = self.siteUrl;
