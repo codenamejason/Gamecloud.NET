@@ -1,29 +1,25 @@
-﻿using System;
+﻿using Gamecloud.Web.Models;
+using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.Owin;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Claims;
-using System.Threading.Tasks;
+using System.Net;
+using System.Net.Http;
 using System.Web;
 using System.Web.Http;
-using Microsoft.AspNet.Identity;
-using Microsoft.AspNet.Identity.EntityFramework;
-using Microsoft.AspNet.Identity.Owin;
-using Microsoft.Owin.Security;
-using Owin;
-using Gamecloud.Web.Models;
 
 namespace Gamecloud.Web.Controllers
 {
-  //[Authorize]
-  public class MeController : ApiController
-  {
+    public class StreambotApiController : ApiController
+    {
     private ApplicationUserManager _userManager;
 
-    public MeController()
+    public StreambotApiController()
     {
     }
 
-    public MeController(ApplicationUserManager userManager)
+    public StreambotApiController(ApplicationUserManager userManager)
     {
       UserManager = userManager;
     }
@@ -40,11 +36,14 @@ namespace Gamecloud.Web.Controllers
       }
     }
 
-    // GET api/Me
+    // GET api/LoadStreambotViewModel
     public GetViewModel Get()
     {
       var user = UserManager.FindById(User.Identity.GetUserId());
       return new GetViewModel() { Hometown = user.Hometown };
     }
+   
+
+
   }
 }

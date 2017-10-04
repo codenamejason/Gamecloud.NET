@@ -1,28 +1,31 @@
 ﻿function HomeViewModel(app, dataModel) {
     var self = this;
 
-    self.myHometown = ko.observable("");
-
+   
     self.ob = {
         Hometown: ko.observable()
 
 
     };
 
-    
+    self.PopulateData(data){
+
+
+
+    };
 
     Sammy(function () {
         this.get('#home', function () {
             // Make a call to the protected Web API by passing in a Bearer Authorization Header
             $.ajax({
                 method: 'get',
-                url: app.dataModel.userInfoUrl,
+                url: app.dataModel.loadStreambotViewModel,
                 contentType: "application/json; charset=utf-8",
                 headers: {
                     'Authorization': 'Bearer ' + app.dataModel.getAccessToken()
                 },
                 success: function (data) {
-                   self.ob.Hometown('Your Hometown is : ' + data.hometown);
+                    //self.ob.Hometown('Your Hometown is : ' + data.hometown);
                 }
             });
         });
@@ -32,7 +35,7 @@
 
     //self.init();
     return self;
-   
+
 
 }
 

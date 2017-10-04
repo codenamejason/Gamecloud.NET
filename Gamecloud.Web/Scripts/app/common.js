@@ -10,6 +10,7 @@ window.common = (function () {
         }
     };
 
+    // Query string parser
     function parseQueryString(queryString) {
         var data = {},
             pairs, pair, separatorIndex, escapedKey, escapedValue, key, value;

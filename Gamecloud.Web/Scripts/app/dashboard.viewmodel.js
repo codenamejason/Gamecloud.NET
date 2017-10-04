@@ -1,43 +1,37 @@
-﻿function HomeViewModel(app, dataModel) {
+﻿function DashboardViewModel(app, dataModel) {
     var self = this;
 
-    self.myHometown = ko.observable("");
+    //self.myHometown = ko.observable("");
 
     self.ob = {
-        Hometown: ko.observable()
+        UserName: ko.observable()
 
 
     };
 
-    
-
     Sammy(function () {
-        this.get('#home', function () {
+        this.get('#dashboard', function () {
             // Make a call to the protected Web API by passing in a Bearer Authorization Header
             $.ajax({
                 method: 'get',
-                url: app.dataModel.userInfoUrl,
+                url: app.dataModel.loadDashboardUrl,
                 contentType: "application/json; charset=utf-8",
                 headers: {
                     'Authorization': 'Bearer ' + app.dataModel.getAccessToken()
                 },
                 success: function (data) {
-                   self.ob.Hometown('Your Hometown is : ' + data.hometown);
+                    self.ob.UserName('Welcome to your Dashboard  ' + data.UserName);
                 }
             });
         });
-        this.get('/', function () { this.app.runRoute('get', '#home'); });
+        this.get('/', function () { this.app.runRoute('get', '#dashboard'); });
     });
 
-
-    //self.init();
     return self;
-   
-
 }
 
 app.addViewModel({
-    name: "Home",
-    bindingMemberName: "home",
-    factory: HomeViewModel
+    name: "Dashboard",
+    bindingMemberName: "dashboard",
+    factory: DashboardViewModel
 });

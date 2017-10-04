@@ -1,6 +1,9 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    color: #eaeaea;
+    background: -webkit-linear-gradient(left, #cecece 0%,#e8e8e8 34%,#e8e8e8 66%,#cecece 100%); /* Chrome10+,Safari5.1+ */
+    /*font-family: 'pt_sansregular';*/
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -33,4 +36,53 @@ textarea {
         float: none;
         padding: 10px 15px;
     }
+}
+
+.page-title {
+    color: #000;
+    /*font-family: 'oswald';*/
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.readmore {
+    background: #bdf1e9;
+    color: #000;
+    font-size: 20px;
+    border: none;
+    padding: 6px 15px;
+    /*font-family: 'oswald';*/
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+}
+
+
+
+.post_ttl {
+    color: #fff;
+    /*font-family: 'oswald';*/
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+input.field {
+    border: 1px solid #525252;
+    background: #000;
+    color: #fff;
+}
+
+
+#clipsform label:after {
+    content: ":";
+}
+
+
+
+#clipsform input {
+    clear: left;
+    width: 100%;
+    box-sizing: border-box;
 }

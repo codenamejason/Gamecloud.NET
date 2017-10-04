@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>Gamecloud - @ViewBag.Title</title>
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @Styles.Render("~/Content/css")
@@ -17,12 +17,18 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Gamecloud", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink("Dashboard", "Index", "Dashboard", new { area = "" }, null)</li>
                     <li>@Html.ActionLink("API", "Index", "Help", new { area = "HelpPage" }, null)</li>
+                    <li>@Html.ActionLink("Streambot", "Index", "Streambot", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink("Docs", "Document", "Home", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink("Clips", "Clips", "Home", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink("Stream", "Stream", "Home", new { area = "" }, null)</li> 
+                    
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
