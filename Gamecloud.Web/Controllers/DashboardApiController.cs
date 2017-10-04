@@ -22,7 +22,7 @@ namespace Gamecloud.Web.Controllers
       UserManager = userManager;
     }
 
-    // GET api/DashboardApiController
+    // GET api/LoadDashboardViewModel
     public DashboardViewModel GetDashboard()
     {
      // Contract.Ensures(Contract.Result<DashboardViewModel>() != null);

@@ -14,7 +14,7 @@ using Gamecloud.Web.Models;
 
 namespace Gamecloud.Web.Controllers
 {
-  //[Authorize]
+  
   public class MeController : ApiController
   {
     private ApplicationUserManager _userManager;

@@ -5,7 +5,7 @@
     self.userInfoUrl = "/api/Me";
     self.siteUrl = "/";
     // Load the User Dashboard
-    self.loadDashboardUrl = "/api/DashboardApiController";
+    self.loadDashboardUrl = "/api/LoadDashboardViewModel";
     self.loadStreambotViewModel = "/api/LoadStreambotViewModel";
 
     // Route operations
