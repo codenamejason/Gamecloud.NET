@@ -1,16 +1,13 @@
-﻿function DashboardViewModel(app, dataModel) {
+﻿function DocumentsViewModel(app, dataModel) {
     var self = this;
 
     //self.myHometown = ko.observable("");
-    self.UserName = ko.observable();
 
-    self.ob = {
-        UserName: ko.observable()
+    UserName = ko.observable();
 
-    };
     
     Sammy(function () {
-        this.get('#dashboard', function () {
+        this.get('#documents', function () {
             // Make a call to the protected Web API by passing in a Bearer Authorization Header
             $.ajax({
                 method: 'get',
@@ -24,7 +21,7 @@
                 }
             });
         });
-        this.get('/', function () { this.app.runRoute('get', '#dashboard'); });
+        this.get('/', function () { this.app.runRoute('get', '#documents'); });
     });
 
     return self;

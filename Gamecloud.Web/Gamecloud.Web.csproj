@@ -247,6 +247,7 @@
     <Compile Include="Controllers\ClipsController.cs" />
     <Compile Include="Controllers\DashboardApiController.cs" />
     <Compile Include="Controllers\DashboardController.cs" />
+    <Compile Include="Controllers\DocumentsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MeController.cs" />
@@ -291,6 +292,7 @@
     <Content Include="Scripts\app\clips.js" />
     <Content Include="Scripts\app\clips.viewmodel.js" />
     <Content Include="Scripts\app\dashboard.viewmodel.js" />
+    <Content Include="Scripts\app\documents.viewmodel.js" />
     <Content Include="Scripts\app\stream.viewmodel.js" />
     <Content Include="Scripts\app\streambot.viewmodel.js" />
     <Content Include="Scripts\app\_run.js" />
@@ -391,6 +393,8 @@
     <Content Include="Views\Streams\_Stream.cshtml" />
     <Content Include="Views\Clips\Index.cshtml" />
     <Content Include="Views\Clips\_Clips.cshtml" />
+    <Content Include="Views\Documents\Index.cshtml" />
+    <Content Include="Views\Documents\_Documents.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
