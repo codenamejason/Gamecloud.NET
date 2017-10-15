@@ -1,4 +1,4 @@
-﻿function StreamViewModel(app, dataModel) {
+﻿function ClipsViewModel(app, dataModel) {
     var self = this;
 
 
@@ -8,18 +8,18 @@
 
     };
 
-    self.PopulateData = function(data) {
+    self.PopulateData = function (data) {
 
 
 
     };
 
     Sammy(function () {
-        this.get('#stream', function () {
+        this.get('#clips', function () {
             // Make a call to the protected Web API by passing in a Bearer Authorization Header
             $.ajax({
                 method: 'get',
-                url: app.dataModel.GetStreams,
+                url: app.dataModel.GetClips,
                 contentType: "application/json; charset=utf-8",
                 headers: {
                     'Authorization': 'Bearer ' + app.dataModel.getAccessToken()
@@ -29,7 +29,7 @@
                 }
             });
         });
-        this.get('/', function () { this.app.runRoute('get', '#Stream'); });
+        this.get('/', function () { this.app.runRoute('get', '#clips'); });
     });
 
 

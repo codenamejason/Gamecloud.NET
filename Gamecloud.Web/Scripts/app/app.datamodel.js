@@ -7,6 +7,7 @@
     // Load the User Dashboard
     self.loadDashboardUrl = "/api/LoadDashboardViewModel";
     self.loadStreambotViewModel = "/api/LoadStreambotViewModel";
+    self.GetStreams = "/api/GetStreams";
 
     // Route operations
 
