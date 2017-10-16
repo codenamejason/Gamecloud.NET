@@ -1,8 +1,170 @@
 ﻿
 <!-- ko with: streambot -->
 
-<iframe src="https://discordapp.com/widget?id=346986682320551966&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+
+<div class="container">
+    <div class="row">
+        <!-- Discord Bots  -->
+        <div class="col-md-6">
+            <div class="panel panel-info">
+                <h2 class="text-center">Discord Bots</h2>
+                <div>
+                    <table class=table>
+                        <thead>
+                        <tr>
+                            <th><span>Active Bots:</span></th>
+                            <th><span>0</span></th>
+                            <th class=pull-right><button id="creatBotDiscord" onclick="CreateDiscordBot();" data-bind="">Create Bot</button></th>
+                        </tr>
+                        </thead>
+                        <tbody data-bind="">
+                        <tr>
+                            <td><span data-bind=""></span></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div>
+                <div id="Results"></div>
+            </div>
+            <script>
+                function CreateDiscordBot() {
+                    $('#creatBotDiscord').show();
+
+                    $.ajax({
+                            url: "/discord.html",
+                            cache: false
+                        })
+                        .error(function(){
+                            alert('Error Loading Page!')
+                        })
+                        .done(function( html ) {
+                            $( "#results" ).append( html );
+                        });
+
+                };
+                function CreateTwitchdBot() {
+                    $.ajax({
+                            url: "/twitch.html",
+                            cache: false
+                        })
+                        .error(function(){
+                            alert('Error Loading Page!')
+                        })
+                        .done(function( html ) {
+                            $( "#results" ).append( html );
+                        });
+
+                };
+            </script>
+        </div>
+        <!-- Twitch Bots  -->
+        <div class="col-md-6">
+            <div class="panel panel-info">
+                <h2 class="text-center">Twitch Bots</h2>
+
+                <div>
+                    <table class=table>
+                        <thead>
+                        <tr>
+                            <th><span>Active Bots:        </span></th>
+                            <th><span>0</span></th>
+                            <th class=pull-right><button data-bind="">Create Bot</button></th>
+                        </tr>
+                        </thead>
+                        <tbody data-bind="">
+                        <tr>
+                            <td><span data-bind=""></span></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    
+    </div>
+
+    <div class="row">
+        <!-- Discord Bots  -->
+        <div class="col-md-6">
+            <div class="panel panel-info">
+                <h2 class="text-center">Steam Bots</h2>
+                <div>
+                    <table class=table>
+                        <thead>
+                        <tr>
+                            <th><span>Active Bots:</span></th>
+                            <th><span>0</span></th>
+                            <th class=pull-right><button id="creatSteamBot" onclick="CreateSteamBot();" data-bind="">Create Bot</button></th>
+                        </tr>
+                        </thead>
+                        <tbody data-bind="">
+                        <tr>
+                            <td><span data-bind=""></span></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div>
+                <div id="Results"></div>
+            </div>
+            <script>
+                function CreateSteamBot() {
+                    $.ajax({
+                            url: "/alert.html",
+                            cache: false
+                        })
+                        .error(function(){
+                            alert('Error Loading Page!')
+                        })
+                        .done(function( html ) {
+                            $( "#results" ).append( html );
+                        });
+
+                };
+            </script>
+        </div>
+        <!-- Twitch Bots  -->
+        <div class="col-md-6">
+            <div class="panel panel-info">
+                <h2 class="text-center">Slack Bots</h2>
+
+                <div>
+                    <table class=table>
+                        <thead>
+                        <tr>
+                            <th><span>Active Bots:        </span></th>
+                            <th><span>0</span></th>
+                            <th class=pull-right><button data-bind="">Create Bot</button></th>
+                        </tr>
+                        </thead>
+                        <tbody data-bind="">
+                        <tr>
+                            <td><span data-bind=""></span></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    
+    </div>
+</div>
+
+
+<iframe src="https://discordapp.com/widget?id=346986682320551966&theme=dark"
+        width="350"
+        height="500"
+        allowtransparency="true"
+        frameborder="0">
+    
+</iframe>
 
 
 
 <!-- /ko -->
+

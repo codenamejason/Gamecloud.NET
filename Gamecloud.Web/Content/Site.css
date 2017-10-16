@@ -1,8 +1,8 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
-    color: #008080;
-    background: -webkit-linear-gradient(left, #cecece 0%,#e8e8e8 34%,#e8e8e8 66%,#cecece 100%); /* Chrome10+,Safari5.1+ */
+    color: #bdf1e9;
+    background: -webkit-linear-gradient(left, #bdf1e9 0%,#bdf1e9 34%,#bdf1e9 66%,#bdf1e9 100%); /* Chrome10+,Safari5.1+ */
     /*font-family: 'pt_sansregular';*/
 }
 
@@ -10,6 +10,10 @@
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.jumbotron {
+    background-color: steelblue;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
