@@ -274,6 +274,9 @@
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Areas\HelpPage\Views\_ViewStart.cshtml" />
+    <None Include=".dockerignore">
+      <DependentUpon>Dockerfile</DependentUpon>
+    </None>
     <None Include="Connected Services\StreamService\configuration91.svcinfo" />
     <None Include="Connected Services\StreamService\configuration.svcinfo" />
     <Content Include="Connected Services\StreamService\Gamecloud.Web.StreamService.CompositeType.datasource">
@@ -334,6 +337,7 @@
     <None Include="Connected Services\StreamService\WCFServices.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Dockerfile" />
     <None Include="Properties\PublishProfiles\gamecloud - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\gamecloud - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />

@@ -8,11 +8,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gamecloud.Web", "Gamecloud.
 		{58BE17A2-BA26-40F6-8CCC-0A8CBD1C26A5} = {58BE17A2-BA26-40F6-8CCC-0A8CBD1C26A5}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogic", "BusinesLogic\BusinessLogic.csproj", "{898B5C16-D47A-494B-A4D0-3B21BCE4C8C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLogic", "BusinesLogic\BusinessLogic.csproj", "{898B5C16-D47A-494B-A4D0-3B21BCE4C8C1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFServices", "WCFServices\WCFServices.csproj", "{58BE17A2-BA26-40F6-8CCC-0A8CBD1C26A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{D5CF64BA-0BC2-4614-9BBB-98EB422726E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAL", "DAL\DAL.csproj", "{D5CF64BA-0BC2-4614-9BBB-98EB422726E7}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{4DE3E737-9902-4C31-9A74-ED9B176CA66A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,6 +38,10 @@ Global
 		{D5CF64BA-0BC2-4614-9BBB-98EB422726E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5CF64BA-0BC2-4614-9BBB-98EB422726E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5CF64BA-0BC2-4614-9BBB-98EB422726E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DE3E737-9902-4C31-9A74-ED9B176CA66A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DE3E737-9902-4C31-9A74-ED9B176CA66A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DE3E737-9902-4C31-9A74-ED9B176CA66A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DE3E737-9902-4C31-9A74-ED9B176CA66A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

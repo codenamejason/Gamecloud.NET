@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  gamecloud.web:
+    image: gamecloud.web
+    build:
+      context: .\Gamecloud.Web
+      dockerfile: Dockerfile
